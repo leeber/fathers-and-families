@@ -1,4 +1,9 @@
-# skeleton
-basic skeleton
+# SC Center for Fathers and Families
 
-Framework for any project
+Redesign of the SC Center for Fathers and Families website.
+
+4 pages targetted:
+- Home Page
+- Donations Page
+- Fathers and Families Page
+- Programs Page
