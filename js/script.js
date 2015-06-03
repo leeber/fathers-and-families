@@ -30,12 +30,24 @@ $(function() {
 	var programs_list = $( ".footerHat ul" );
 	var programs_visible = false;
 	programs_list.hide();
+	
+	var newsletter = $( ".newsletter" );
+	var form = $( ".nlforms" );
 
+	var form_visible = false;
+	form.hide();
+	
 	programs_button.on( "click", function(ep){
 
 		if( menu_visible ){
 			nav_list.slideUp( "slow" );
 			menu_visible = false;
+		}
+
+		if( form_visible ){
+			form.slideUp( "slow" );
+			form_visible = false;
+			$(".newsletter").children(".overlay").css( "background", "none" );
 		}
 
 		if( programs_visible ){
@@ -52,17 +64,19 @@ $(function() {
 		ep.preventDefault();
 	});
 
-	var newsletter = $( ".newsletter" );
-	var form = $( ".nlforms" );
-
-	var form_visible = false;
-	form.hide();
+	
 
 	newsletter.on( "click", function(en){
 
 		if( menu_visible ){
 			nav_list.slideUp( "slow" );
 			menu_visible = false;
+		}
+
+		if( programs_visible ){
+			programs_list.slideUp( "slow" );
+			programs_visible = false;
+			$(".programButton").children(".overlay").css( "background", "none" );
 		}
 
 		if( form_visible ){

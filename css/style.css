@@ -77,6 +77,15 @@ footer{
 			background: #2e518b;
 		}
 
+		.mainNavUl2{
+			display: none;
+			list-style: none;
+		}
+		.mainNavUl2 li a{
+			display: none;
+		}
+		
+
 /* MAIN BODY */
 	
 	/* Text Area */
@@ -86,7 +95,10 @@ footer{
 		.intro p{
 			text-align: center;
 		}
-
+		
+		.intro .readmore{
+		margin-bottom: 20px;
+	}
 	/* SLIDESHOW */
 		.slideshowimg{
 			width: 100%;
@@ -95,23 +107,33 @@ footer{
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
 		}
-		.slideshow{
+		.sstest{
+			display: block;
 			position: relative;
 		}
 
-		.arrow{
-			float: left;
-			display: block;
-			width: 10%;
+		.ssbanner a{
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: calc(5vw + 20px);
 		}
 		.ssbanner h3{
-			float: left;
-			display: block;
-			margin: 5px auto;
-			width: 80%;
 			text-align: center;
+			margin: 0 auto;
+			padding-bottom: 0;
 			color: white;
+			font-size: 5vw;
 			line-height: 100%;
+			width: 78%;
+		}
+		.arr1{
+			float: left;
+		}
+		.arr2{
+			float: right;
 		}
 		.ssbanner{
 			position: absolute;
@@ -120,8 +142,9 @@ footer{
 			right: 0;
 			display: block;
 			background: rgb(0,47,91);
-			width: 100%;
-			padding: 2% 0;
+			padding: 10px;
+			line-height: 100%;
+			text-align: left;
 		}
 	
 	/* MIDDLE OF MAIN BODY */
@@ -147,7 +170,8 @@ footer{
 			text-align: center;
 			margin: 0;
 			display: block;
-			background: gray;
+			color: white;
+			background: rgba(0,47,91, 1);
 			padding: 5px 0;
 			border: 2px solid black;
 			border-radius: 10px;
@@ -261,7 +285,6 @@ footer{
 			font-size: 5vw;
 			margin: 0 auto;
 			margin-bottom: 5px;
-			height: 50px;
 		}
 		.overlay{
 			padding: 0;
@@ -285,6 +308,10 @@ footer{
 		.nlforms{
 			background: rgba(0,47,91, 1);
 			padding: 5%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
 		}
 
 		.submitbutton{
@@ -400,29 +427,125 @@ footer{
 
 		/* TABLET SETTINGS */
 @media screen and (min-width: 600px) {
-	
+	.copyright{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.greenbutton{
+		display: inline-block;
+		width: 49%;
+		font-size: 3vw;
+	}
+	.overlay{
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.banner{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.Logo{
+		margin-top: 0px;
+		width: 300px;
+		height: 100px;
+	}
+	.menuButton{
+		position: absolute;
+		top: 0;
+		left: 86.5%;
+		margin: 0;
+	}
+	.slideshowimg{
+		height: auto;
+	}
 }
 
 
 		/* DESKTOP SETTINGS */
 @media screen and (min-width: 900px) {
-	.footerbottom{
-		min-height: 250px;
-		position: relative;
-	}
-	.searchdiv{
-		float: left;
-		width: 30%;
-	}
-	.footermiddle, .footerright{
+	.copyright, .footermiddle, .footerright{
 		float: right;
 		width: 30%;
 	}
-
 	.copyright{
+		width: 40%;
+		font-size: 0.8em;
+	}
+	.cp1{
+		font-size: 1.2em;
+	}
+	.italic{
+		font-size: 0.8em;
+	}
+	.programsul{
+		width: 90%;
+		background: none;
+	}
+	.programsul li{
+		display: inline-block;
+		width: 32.5%;
+		font-size: 100%;
+		border-radius: 10px;
+		background: rgba(0,41,97, 1);
+	}
+	.programsul li:first-child{
+		border: 2px solid black;
+	}
+	.programsul li:last-child{
+		border: 2px solid black;
+	}
+	.tablewrap {
+		display: block;
+		width: 100%;
+	}
+	.intro{
+		box-sizing: border-box;
+		display: inline-block;
+		background: rgba(0,41,97, 1);
+		color: white;
+		height: 500px;
 		width: 30%;
+		vertical-align: top;
+		padding: 2%;
+		position: relative;
+	}
+	.intro h2{
+		font-size: 2.2vw;
+		margin-top: 0;
+	}
+	.intro p{
+		text-align: left;
+		text-indent: 30px;
+		font-size: 90%;
+	}
+	.intro .readmore{
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		right: 0;
+	}
+	.slideshow{
+		display: inline-block;
+		width: 68%;
+		height: 500px;
+		margin-left: 1.4%;
+	}
+	.slideshowimg{
+		width: 100%;
+		height: 495px;
+	}
+	.slideshow h3{
+		font-size: 3vw;
+	}
+	.ssbanner a{
+		bottom: calc(3vw + 20px);
+	}
+	.news{
+		padding-bottom: 0;
+	}
+	.newsblock{
+		padding-bottom: 20px;
 	}
 }
