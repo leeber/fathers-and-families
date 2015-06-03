@@ -7,7 +7,7 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 
 			<!-- JQuery -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+			<script src="js/jquery-1.11.3.min.js"></script>	
 			<script src="js/script.js"></script>
 	</head>
 
@@ -38,7 +38,7 @@
 				<div class="mainBodyWrapper"> <!-- Wrapper for main body of site -->
 				
 					<div class="clearfix"> <!-- Top Floats -->
-						<div class="left">
+						<div class="left intro">
 							<h2>Fatherhood Done Right</h2>
 							<p>The Center and our local fatherhood programs are among the Southeast's most experienced and effective organizations creating an environment to foster stronger, more stable and successful families by supporting engaged, responsible fathers. Working together the Center and six well-established, local fatherhood programs ensure father-centered, community-based quality services delivered in a respectful, non judgmental environment. In addition, the Center helps secure on-going financial support, statewide partnerships and serves as a resource for practitioners and a voice for fathers.</p>
 						</div>
@@ -55,55 +55,62 @@
 
 					<div class="middle clearfix"> <!-- Middle floats -->
 
-						<div class="left testimonial"></div>
+						<div class="left testimonial">
+							<iframe src="https://www.youtube.com/embed/4-m_b6qYz-Q" frameborder="0" allowfullscreen></iframe>
+						</div>
 						<div class="right donations"><a href="donate.html"><img src="resources/donate_today.png" alt=""></a></div>
 
 					</div>
 
-					<div class="news"> <!-- Bottom Floats -->
-						
+					<div class="news"> <!-- Bottom Floats (News Section) -->
+						<h2 class="newsh2">News and Events!</h2>
+						<div class="newsdiv clearfix">
+							<div class="newsblock nb1">
+								<h3 class="date">May 21, 2015</h3>
+								<p class="narticle">For our programs, there's no bigger holiday than Father's Day! Each of our programs are planning events for the holiday, and we look forward to seeing you there!</p>
+								<a href="" class="readmore">Read More</a>
+							</div>
+							<div class="newsblock nb2">
+								<h3 class="date">May 21, 2015</h3>
+								<p class="narticle">For our programs, there's no bigger holiday than Father's Day! Each of our programs are planning events for the holiday, and we look forward to seeing you there!</p>
+								<a href="" class="readmore">Read More</a>
+							</div>
+						</div> <!-- News Articles End -->
+					</div> <!-- News Section End -->
 
-
-					</div>
-
-				</div> <!-- Main Body of Site Ended .mainBodyWrapper -->
-			</div>
-			
-			<footer>
-				<div class="footerWrapper"> <!-- Contents of Footer -->
 					<div class="footerHat"> <!-- Buttons at top of Footer -->
-						<ul>
-							<li><a href="programs.html">A Father's Place <p>Horry, Georgetown</p></a></li>
+						<ul class="programsul">
+							<li><a href="programs.html">A Father's Place <p>Horry-Georgetown</p></a></li>
 							<li><a href="programs.html">Father To Father Project<p>Charleston</p></a></li>
 							<li><a href="programs.html">Lancaster Fatherhood Project<p>Lancaster</p></a></li>
 							<li><a href="programs.html">Man 2 Man<p>Marlboro</p></a></li>
-							<li><a href="programs.html">Midlands Fatherhood Coalition<p>Richland, Lexington, Fairfield, Aiken</p></a></li>
-							<li><a href="programs.html">Upstate Fatherhood Coalition<p>Spartanbug, Greenville</p></a></li>
+							<li><a href="programs.html">Midlands Fatherhood Coalition<p>Richland-Lexington-Fairfield-Aiken</p></a></li>
+							<li><a href="programs.html">Upstate Fatherhood Coalition<p>Spartanbug-Greenville</p></a></li>
 						</ul>
-						<a class="programButton greenbutton"><img src="resources/program_dropdown.png" alt=""></a>
+					</div>	<!-- End of footer's top -->	
+				</div> <!-- Main Body of Site Ended .mainBodyWrapper -->
+			</div>
+			<footer>
+				<div class="footerWrapper"> <!-- Contents of Footer -->
+					<div class="footerhatButtons"> <!-- Buttons at top of Footer -->
+						<div class="programButton greenbutton"><a class="overlay" href="#">Find A Program</a></div>
 						<form class="nlforms">
 							<input class="nlinput" type="text" value="Name" id="nlname">
 							<input class="nlinput" type="text" value="Email" id="nlemail">
 							<input class="submitbutton" type="submit">
 						</form>
-						<a class="newsletter greenbutton" href="#"><img src="resources/green_button.png" alt=""></a>
-					</div>	<!-- End of footer's top -->				
+						<div class="newsletter greenbutton"><a class="overlay" href="#">Sign Up For Our Newsletter</a></div>
+					</div>	<!-- End of footer's top -->			
 					
 					<div class="footerbottom clearfix">
-						<div class="footerleft">
+						<div class="searchdiv">
 							<form class="searchBar">
 								<input type="text" value="" id="search">
 								<input type="submit" value="Search">
 							</form>
-							<div class="copyright cr1">
-								<p>The South Carolina Center for Fathers and Famliies</p>
-								<p class="italic">A Ministry of the Sisters of Charity of St. Augustine</p>
-								<p>The information on this website is for educational purposes only. It is not legal advice, nor does it create an attorney/client relationship.</p>
-								<p>Copyright 2014 The South Carolina Center for Fathers and Families</p>
-							</div>
 						</div>
 						
-						<div class="faq faq1">
+						<div class="faq footerright">
 							<ul>
 								<li><a href="#">FAQ's</a></li>
 								<li><a href="#">Contact Us</a></li>
@@ -121,22 +128,12 @@
 							</div>
 						</div>
 
-						<div class="copyright cr2">
-							<p>The South Carolina Center for Fathers and Famliies</p>
+						<div class="copyright">
+							<p class="cp1">The South Carolina Center for Fathers and Famliies</p>
 							<p class="italic">A Ministry of the Sisters of Charity of St. Augustine</p>
-							<p>The information on this website is for educational purposes only. It is not legal advice, nor does it create an attorney/client relationship.</p>
-							<p>Copyright 2014 The South Carolina Center for Fathers and Families</p>
-						</div>
-	
-						<div class="footerright">
-							<div class="faq faq2">
-								<ul>
-									<li><a href="#">FAQ's</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Site Map</a></li>
-								</ul>
-							</div>
-						</div>
+							<p class="cp2">The information on this website is for educational purposes only. It is not legal advice, nor does it create an attorney/client relationship.</p>
+							<p class="cp2">Copyright 2014 The South Carolina Center for Fathers and Families</p>
+						</div> 
 					</div>
 
 
